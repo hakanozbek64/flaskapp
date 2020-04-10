@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class = "jumbotron text-center">
+
+<h3>Hakan Özbek'in Yazılım Bloğuna Hoşgeldiniz </h3>
+    <p>Bir  geliştirici olarak yazılarımı  paylaştığım Blog sayfamı sizlere tanıtmaktan mutluluk duyuyorum </p>
+
+</div>
+
+<ul>
+
+    {% for article in articles %}
+    
+
+        <li>Article ıd: {{article.id}} -Title:  {{article.title}} - Content: {{article.content}}</li>
+    
+    
+    {% endfor %}
+
+
+</ul>
+
+
+{% endblock body %}
